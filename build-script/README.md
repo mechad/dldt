@@ -23,4 +23,5 @@ The software was validated on:
     ```sh
     sudo ./build.sh
     ```
-5. Note: only CPU plugin is built by the script
+5. Add -DCMAKE_BUILD_TYPE=Debug if you want to build libraries for debugging purpose
+6. Note: only CPU plugin is built by the script

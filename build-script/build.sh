@@ -9,7 +9,7 @@ cd inference-engine; \
     wget -O - ${DLDT_C_WRAPPER_REPO} | patch -p2; \
     mkdir build; \
     cd build; \
-    cmake -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/usr -DLIB_INSTALL_PATH=/usr/lib/x86_64-linux-gnu -DENABLE_MKL_DNN=ON -DENABLE_CLDNN=OFF -DENABLE_SAMPLE_CORE=OFF  ..; \
+    cmake -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=/usr -DLIB_INSTALL_PATH=/usr/lib/x86_64-linux-gnu -DENABLE_MKL_DNN=ON -DENABLE_CLDNN=OFF -DENABLE_SAMPLES_CORE=OFF  ..; \
     make -j16; \
     rm -rf ../bin/intel64/Release/lib/libgtest*; \
     rm -rf ../bin/intel64/Release/lib/libgmock*; \
